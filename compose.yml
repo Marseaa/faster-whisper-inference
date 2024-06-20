@@ -4,7 +4,7 @@ services:
         build: 
             context: .
             dockerfile: Dockerfile
-        image: whisper-inference:latest
+        image: fasterwhisper-inference:latest
         deploy:
             resources:
                 reservations:
