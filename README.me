@@ -2,31 +2,6 @@ Inferencia do modelo faster-whisper de SYSTRAN
 
 Transcrevendo audio 
 
-Saída:
-E:\INOVA_ESTAGIO\audioemtexto>docker image build -t whisper-inference:latest .
-[+] Building 358.1s (12/12) FINISHED                                                    docker:default
- => [internal] load build definition from Dockerfile                                              0.0s
- => => transferring dockerfile: 734B                                                              0.0s
- => [internal] load metadata for docker.io/nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04            0.6s
- => [internal] load .dockerignore                                                                 0.0s
- => => transferring context: 2B                                                                   0.0s
- => [1/8] FROM docker.io/nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04@sha256:8f9dd0d09d3ad3900357  0.0s
- => CACHED [2/8] RUN rm /bin/sh && ln -s /bin/bash /bin/sh                                        0.0s
- => CACHED [3/8] RUN apt-get update && apt-get install -y wget                                    0.0s
- => CACHED [4/8] RUN apt-get install -y python3  && apt-get install -y python3-pip                0.0s
- => CACHED [5/8] WORKDIR /app                                                                     0.0s
- => [6/8] RUN pip install accelerate                                                            298.3s
- => [7/8] RUN pip install torch torchvision torchaudio transformers                               9.1s
- => [8/8] RUN pip install --force-reinstall "faster-whisper @ https://github.com/SYSTRAN/faster  40.4s
- => exporting to image                                                                            9.5s
- => => exporting layers                                                                           9.5s
- => => writing image sha256:fe67ef7d9254e45bcdf3bf0d0dcc5900cf233e47e53365a157834a1064605170      0.0s
- => => naming to docker.io/library/whisper-inference:latest                                       0.0s
-
-View build details: docker-desktop://dashboard/build/default/default/ymsh40vitbvo4nv6yjtv7x31k
-
-E:\INOVA_ESTAGIO\audioemtexto>docker-compose run yt
-
 ==========
 == CUDA ==
 ==========
@@ -41,9 +16,77 @@ https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
 
 A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
 
-Detected language 'pt' with probability 0.999023
-[0.00s -> 10.26s]  Alô, alô, alô. Esse áudio é um teste. Esse áudio é um teste. Duas vezes. Alô, alô, alô.
-
-E:\INOVA_ESTAGIO\audioemtexto>
 
 
+------------ Faster Whisper Transcription --------------
+
+
+Detected language 'en' with probability 0.989746
+
+
+[0.00s -> 29.86s]  911. What is the address of your emergency? I'm not sure. Okay, what's going on? Um, I'm not sure. Why are you calling 911? Pardon me? Why are you calling 911? What's the emergency? Okay, never mind. Ma'am? Yes? What's the emergency? I can't really, I don't know. You don't know why you called 911? Yes, I do. Okay, then why did you call? Okay, do I have to say right now? Yes. Okay, then never mind. Are you in a vehicle? Yes.
+[30.00s -> 35.70s]  Are you able to talk or is there someone? No. Okay. Are you traveling? Yes.
+[36.18s -> 42.20s]  Are you going north or south? Are we going north or south? We're heading south.
+[43.94s -> 46.60s]  Okay, are you in danger? Yes.
+[48.78s -> 53.20s]  Okay, has someone kidnapped you? I don't know.
+[53.36s -> 56.02s]  Are you with a family member? No.
+[56.32s -> 58.94s]  Okay, are you with someone that you know? Yes.
+[58.94s -> 62.46s]  Does this person know you've called 911? No.
+[62.72s -> 68.72s]  Okay. Okay, then just pretend like you're talking to your friend and I'll see if I can't get somebody to help you.
+[69.06s -> 71.26s]  And you're going southbound, right? Yes.
+[71.44s -> 76.74s]  Okay. Are you in a vehicle, are you in a truck or a car? Are you in a truck? Yes.
+[77.00s -> 80.52s]  Okay. Is it, I'm going to ask you what color, is it white?
+[81.04s -> 87.00s]  What color truck are we in? Black. It's my sister. She's wanting to know. We're in a black truck.
+
+
+
+
+------------ Pyannote Diarization --------------
+
+
+config.yaml: 100%|████████████████████████████████████████████████████| 469/469 [00:00<00:00, 2.78MB/s]
+pytorch_model.bin: 100%|██████████████████████████████████████████| 5.91M/5.91M [00:01<00:00, 3.05MB/s]
+config.yaml: 100%|████████████████████████████████████████████████████| 399/399 [00:00<00:00, 2.37MB/s]
+pytorch_model.bin: 100%|██████████████████████████████████████████| 26.6M/26.6M [00:02<00:00, 10.2MB/s]
+config.yaml: 100%|████████████████████████████████████████████████████| 221/221 [00:00<00:00, 1.05MB/s]
+
+
+
+start=0.0s stop=2.0s speaker_SPEAKER_00
+start=2.5s stop=3.5s speaker_SPEAKER_00
+start=3.9s stop=5.0s speaker_SPEAKER_00
+start=5.2s stop=6.5s speaker_SPEAKER_00
+start=6.7s stop=10.8s speaker_SPEAKER_00
+start=11.0s stop=12.5s speaker_SPEAKER_00
+start=12.8s stop=16.4s speaker_SPEAKER_00
+start=13.5s stop=13.8s speaker_SPEAKER_01
+start=16.5s stop=16.9s speaker_SPEAKER_00
+start=17.1s stop=19.3s speaker_SPEAKER_00
+start=17.3s stop=17.7s speaker_SPEAKER_01
+start=19.5s stop=23.6s speaker_SPEAKER_00
+start=19.6s stop=20.1s speaker_SPEAKER_01
+start=23.9s stop=27.8s speaker_SPEAKER_00
+start=28.0s stop=29.1s speaker_SPEAKER_00
+start=29.5s stop=29.8s speaker_SPEAKER_00
+start=30.1s stop=32.7s speaker_SPEAKER_00
+start=33.0s stop=34.9s speaker_SPEAKER_00
+start=35.4s stop=35.7s speaker_SPEAKER_00
+start=36.2s stop=37.8s speaker_SPEAKER_00
+start=38.9s stop=40.5s speaker_SPEAKER_00
+start=41.4s stop=52.3s speaker_SPEAKER_00
+start=44.2s stop=44.3s speaker_SPEAKER_01
+start=52.7s stop=55.4s speaker_SPEAKER_00
+start=55.6s stop=58.9s speaker_SPEAKER_00
+start=59.9s stop=63.2s speaker_SPEAKER_00
+start=64.3s stop=68.8s speaker_SPEAKER_00
+start=69.2s stop=71.3s speaker_SPEAKER_00
+start=71.4s stop=72.1s speaker_SPEAKER_00
+start=72.4s stop=75.0s speaker_SPEAKER_00
+start=75.2s stop=76.1s speaker_SPEAKER_00
+start=76.4s stop=76.7s speaker_SPEAKER_00
+start=77.0s stop=77.4s speaker_SPEAKER_00
+start=77.8s stop=80.7s speaker_SPEAKER_00
+start=81.1s stop=83.4s speaker_SPEAKER_00
+start=83.6s stop=84.6s speaker_SPEAKER_00
+start=85.1s stop=85.9s speaker_SPEAKER_00
+start=86.1s stop=87.1s speaker_SPEAKER_00
