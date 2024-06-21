@@ -1,0 +1,38 @@
+start=0.0s stop=2.0s speaker=['SPEAKER_00'] text=  What is the address of your emergency?
+start=2.5s stop=3.5s speaker=['SPEAKER_00'] text=  I'm not sure.
+start=3.9s stop=5.0s speaker=['SPEAKER_00'] text=  What's going on?
+start=5.2s stop=6.5s speaker=['SPEAKER_00'] text=  I'm not sure.
+start=6.7s stop=10.8s speaker=['SPEAKER_00'] text=  Why are you calling 911?  Pardon me?  Why are you calling 911?
+start=11.0s stop=12.5s speaker=['SPEAKER_00'] text=  What's the emergency?
+start=12.8s stop=16.4s speaker=['SPEAKER_00'] text=  Okay, never mind.  Ma'am?  Yes?  What's the emergency?
+start=13.5s stop=13.8s speaker=['SPEAKER_01'] text=  for my
+start=16.5s stop=16.9s speaker=['SPEAKER_00'] text=  I...
+start=17.1s stop=19.3s speaker=['SPEAKER_00'] text=  I mean, I can't really, I don't know.
+start=17.3s stop=17.7s speaker=['SPEAKER_01'] text=  Camila.
+start=19.5s stop=23.6s speaker=['SPEAKER_00'] text=  You don't know why you called 9-1-1?  Yes, I do.  Okay, then why did you call?
+start=19.6s stop=20.1s speaker=['SPEAKER_01'] text=  you don't
+start=23.9s stop=27.8s speaker=['SPEAKER_00'] text=  Okay, do I have to stay right now?  Yes.  Okay, then never mind.
+start=28.0s stop=29.1s speaker=['SPEAKER_00'] text=  Are you in a vehicle?
+start=29.5s stop=29.8s speaker=['SPEAKER_00'] text=  Yes.
+start=30.1s stop=32.7s speaker=['SPEAKER_00'] text=  Are you able to talk or is there someone?
+start=33.0s stop=34.9s speaker=['SPEAKER_00'] text=  Are you traveling?
+start=35.4s stop=35.7s speaker=['SPEAKER_00'] text=  Yes.
+start=36.2s stop=37.8s speaker=['SPEAKER_00'] text=  Are you going north or south?
+start=38.9s stop=40.5s speaker=['SPEAKER_00'] text=  Are we going north or south?
+start=41.4s stop=52.3s speaker=['SPEAKER_00'] text=  What have you found?  Okay, are you in danger?  Yes.  Okay, has someone kidnapped you?  No.
+start=44.2s stop=44.3s speaker=['SPEAKER_01'] text=  Oh,
+start=52.7s stop=55.4s speaker=['SPEAKER_00'] text=  I don't know.  Are you with a family member?
+start=55.6s stop=58.9s speaker=['SPEAKER_00'] text=  No.  Okay.  Are you with someone that you know?  Yes.
+start=59.9s stop=63.2s speaker=['SPEAKER_00'] text=  Does this person know you've called 9-1-1?  No.  Okay.  Okay.
+start=64.3s stop=68.8s speaker=['SPEAKER_00'] text=  Okay, then just pretend like you're talking to your friend and I'll see if I can't get somebody to help you.
+start=69.2s stop=71.3s speaker=['SPEAKER_00'] text=  And you're going southbound, right?  Yes.
+start=71.4s stop=72.1s speaker=['SPEAKER_00'] text=  Okay.
+start=72.4s stop=75.0s speaker=['SPEAKER_00'] text=  Are you in a vehicle, are you in a truck or a car?
+start=75.2s stop=76.1s speaker=['SPEAKER_00'] text=  Are you in a truck?
+start=76.4s stop=76.7s speaker=['SPEAKER_00'] text=  Yes.
+start=77.0s stop=77.4s speaker=['SPEAKER_00'] text=  Okay.  Okay.
+start=77.8s stop=80.7s speaker=['SPEAKER_00'] text=  I'm going to ask you what color, is it white?
+start=81.1s stop=83.4s speaker=['SPEAKER_00'] text=  What color truck are we in?  Black.
+start=83.6s stop=84.6s speaker=['SPEAKER_00'] text=  It's my sister.
+start=85.1s stop=85.9s speaker=['SPEAKER_00'] text=  want to know
+start=86.1s stop=87.1s speaker=['SPEAKER_00'] text=  We're in a black truck.
