@@ -13,12 +13,13 @@ RUN apt-get install -y python3  && apt-get install -y python3-pip
 
 RUN apt-get update && apt-get install -y git
 
+RUN apt-get update && apt-get install -y ffmpeg
+
 WORKDIR /app
 
-RUN pip install accelerate
+RUN pip install accelerate pydub av
 RUN pip install torch torchvision torchaudio transformers
 RUN pip install --force-reinstall "faster-whisper @ https://github.com/SYSTRAN/faster-whisper/archive/refs/heads/master.tar.gz"
-#RUN pip install git+https://github.com/m-bain/whisperx.git --upgrade
 
 RUN pip install pyannote.audio
 
@@ -30,3 +31,4 @@ ENV NVIDIA_VISIBLE_DEVICES all
 
 CMD ["python3", "app.py"]
 
+# https://lablab.ai/t/whisper-transcription-and-speaker-identification
