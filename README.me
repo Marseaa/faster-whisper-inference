@@ -1,6 +1,6 @@
 Inferencia do modelo faster-whisper de SYSTRAN
 
-Transcrevendo audio 
+Transcrevendo audio e identificando narradores
 
 ==========
 == CUDA ==
@@ -16,39 +16,14 @@ https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
 
 A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
 
-
-
------------- Faster Whisper Transcription --------------
-
-
-Detected language 'en' with probability 0.989746
-
-
-[0.00s -> 29.86s]  911. What is the address of your emergency? I'm not sure. Okay, what's going on? Um, I'm not sure. Why are you calling 911? Pardon me? Why are you calling 911? What's the emergency? Okay, never mind. Ma'am? Yes? What's the emergency? I can't really, I don't know. You don't know why you called 911? Yes, I do. Okay, then why did you call? Okay, do I have to say right now? Yes. Okay, then never mind. Are you in a vehicle? Yes.
-[30.00s -> 35.70s]  Are you able to talk or is there someone? No. Okay. Are you traveling? Yes.
-[36.18s -> 42.20s]  Are you going north or south? Are we going north or south? We're heading south.
-[43.94s -> 46.60s]  Okay, are you in danger? Yes.
-[48.78s -> 53.20s]  Okay, has someone kidnapped you? I don't know.
-[53.36s -> 56.02s]  Are you with a family member? No.
-[56.32s -> 58.94s]  Okay, are you with someone that you know? Yes.
-[58.94s -> 62.46s]  Does this person know you've called 911? No.
-[62.72s -> 68.72s]  Okay. Okay, then just pretend like you're talking to your friend and I'll see if I can't get somebody to help you.
-[69.06s -> 71.26s]  And you're going southbound, right? Yes.
-[71.44s -> 76.74s]  Okay. Are you in a vehicle, are you in a truck or a car? Are you in a truck? Yes.
-[77.00s -> 80.52s]  Okay. Is it, I'm going to ask you what color, is it white?
-[81.04s -> 87.00s]  What color truck are we in? Black. It's my sister. She's wanting to know. We're in a black truck.
-
-
-
-
 ------------ Pyannote Diarization --------------
 
 
-config.yaml: 100%|████████████████████████████████████████████████████| 469/469 [00:00<00:00, 2.78MB/s]
-pytorch_model.bin: 100%|██████████████████████████████████████████| 5.91M/5.91M [00:01<00:00, 3.05MB/s]
-config.yaml: 100%|████████████████████████████████████████████████████| 399/399 [00:00<00:00, 2.37MB/s]
-pytorch_model.bin: 100%|██████████████████████████████████████████| 26.6M/26.6M [00:02<00:00, 10.2MB/s]
-config.yaml: 100%|████████████████████████████████████████████████████| 221/221 [00:00<00:00, 1.05MB/s]
+config.yaml: 100%|████████████████████████████████████████████████████| 469/469 [00:00<00:00, 4.80MB/s]
+pytorch_model.bin: 100%|██████████████████████████████████████████| 5.91M/5.91M [00:01<00:00, 3.27MB/s]
+config.yaml: 100%|████████████████████████████████████████████████████| 399/399 [00:00<00:00, 2.30MB/s]
+pytorch_model.bin: 100%|██████████████████████████████████████████| 26.6M/26.6M [00:02<00:00, 10.6MB/s]
+config.yaml: 100%|████████████████████████████████████████████████████| 221/221 [00:00<00:00, 1.61MB/s]
 
 
 
@@ -90,3 +65,110 @@ start=81.1s stop=83.4s speaker_SPEAKER_00
 start=83.6s stop=84.6s speaker_SPEAKER_00
 start=85.1s stop=85.9s speaker_SPEAKER_00
 start=86.1s stop=87.1s speaker_SPEAKER_00
+
+
+
+
+------------ Faster Whisper Raw Transcription --------------
+
+
+Detected language 'en' with probability 0.989746
+
+
+[0.00s -> 29.86s]  911. What is the address of your emergency? I'm not sure. Okay, what's going on? Um, I'm not sure. Why are you calling 911? Pardon me? Why are you calling 911? What's the emergency? Okay, never mind. Ma'am? Yes? What's the emergency? I can't really, I don't know. You don't know why you called 911? Yes, I do. Okay, then why did you call? Okay, do I have to say right now? Yes. Okay, then never mind. Are you in a vehicle? Yes.
+[30.00s -> 35.70s]  Are you able to talk or is there someone? No. Okay. Are you traveling? Yes.
+[36.18s -> 42.20s]  Are you going north or south? Are we going north or south? We're heading south.
+[43.94s -> 46.60s]  Okay, are you in danger? Yes.
+[48.78s -> 53.20s]  Okay, has someone kidnapped you? I don't know.
+[53.36s -> 56.02s]  Are you with a family member? No.
+[56.32s -> 58.94s]  Okay, are you with someone that you know? Yes.
+[58.94s -> 62.46s]  Does this person know you've called 911? No.
+[62.72s -> 68.72s]  Okay. Okay, then just pretend like you're talking to your friend and I'll see if I can't get somebody to help you.
+[69.06s -> 71.26s]  And you're going southbound, right? Yes.
+[71.44s -> 76.74s]  Okay. Are you in a vehicle, are you in a truck or a car? Are you in a truck? Yes.
+[77.00s -> 80.52s]  Okay. Is it, I'm going to ask you what color, is it white?
+[81.04s -> 87.00s]  What color truck are we in? Black. It's my sister. She's wanting to know. We're in a black truck.
+
+
+
+
+
+
+------------ Final Transcription --------------
+
+
+start=0.0s stop=2.0s speaker=['SPEAKER_00'] text=  What is the address of your emergency?
+
+start=2.5s stop=3.5s speaker=['SPEAKER_00'] text=  I'm not sure.
+
+start=3.9s stop=5.0s speaker=['SPEAKER_00'] text=  What's going on?
+
+start=5.2s stop=6.5s speaker=['SPEAKER_00'] text=  I'm not sure.
+
+start=6.7s stop=10.8s speaker=['SPEAKER_00'] text=  Why are you calling 911?  Pardon me?  Why are you calling 911?
+
+start=11.0s stop=12.5s speaker=['SPEAKER_00'] text=  What's the emergency?
+
+start=12.8s stop=16.4s speaker=['SPEAKER_00'] text=  Okay, never mind.  Ma'am?  Yes?  What's the emergency?
+
+start=13.5s stop=13.8s speaker=['SPEAKER_01'] text=  for my
+
+start=16.5s stop=16.9s speaker=['SPEAKER_00'] text=  I...
+
+start=17.1s stop=19.3s speaker=['SPEAKER_00'] text=  I mean, I can't really, I don't know.
+
+start=17.3s stop=17.7s speaker=['SPEAKER_01'] text=  Camila.
+
+start=19.5s stop=23.6s speaker=['SPEAKER_00'] text=  You don't know why you called 9-1-1?  Yes, I do.  Okay, then why did you call?
+
+start=19.6s stop=20.1s speaker=['SPEAKER_01'] text=  you don't
+
+start=23.9s stop=27.8s speaker=['SPEAKER_00'] text=  Okay, do I have to stay right now?  Yes.  Okay, then never mind.
+
+start=28.0s stop=29.1s speaker=['SPEAKER_00'] text=  Are you in a vehicle?
+
+start=29.5s stop=29.8s speaker=['SPEAKER_00'] text=  Yes.
+
+start=30.1s stop=32.7s speaker=['SPEAKER_00'] text=  Are you able to talk or is there someone?
+
+start=33.0s stop=34.9s speaker=['SPEAKER_00'] text=  Are you traveling?
+
+start=35.4s stop=35.7s speaker=['SPEAKER_00'] text=  Yes.
+
+start=36.2s stop=37.8s speaker=['SPEAKER_00'] text=  Are you going north or south?
+
+start=38.9s stop=40.5s speaker=['SPEAKER_00'] text=  Are we going north or south?
+
+start=41.4s stop=52.3s speaker=['SPEAKER_00'] text=  What have you found?  Okay, are you in danger?  Yes.  Okay, has someone kidnapped you?  No.
+
+start=44.2s stop=44.3s speaker=['SPEAKER_01'] text=  Oh,
+
+start=52.7s stop=55.4s speaker=['SPEAKER_00'] text=  I don't know.  Are you with a family member?
+
+start=55.6s stop=58.9s speaker=['SPEAKER_00'] text=  No.  Okay.  Are you with someone that you know?  Yes.
+
+start=59.9s stop=63.2s speaker=['SPEAKER_00'] text=  Does this person know you've called 9-1-1?  No.  Okay.  Okay.
+
+start=64.3s stop=68.8s speaker=['SPEAKER_00'] text=  Okay, then just pretend like you're talking to your friend and I'll see if I can't get somebody to help you.
+
+start=69.2s stop=71.3s speaker=['SPEAKER_00'] text=  And you're going southbound, right?  Yes.
+
+start=71.4s stop=72.1s speaker=['SPEAKER_00'] text=  Okay.
+
+start=72.4s stop=75.0s speaker=['SPEAKER_00'] text=  Are you in a vehicle, are you in a truck or a car?
+
+start=75.2s stop=76.1s speaker=['SPEAKER_00'] text=  Are you in a truck?
+
+start=76.4s stop=76.7s speaker=['SPEAKER_00'] text=  Yes.
+
+start=77.0s stop=77.4s speaker=['SPEAKER_00'] text=  Okay.  Okay.
+
+start=77.8s stop=80.7s speaker=['SPEAKER_00'] text=  I'm going to ask you what color, is it white?
+
+start=81.1s stop=83.4s speaker=['SPEAKER_00'] text=  What color truck are we in?  Black.
+
+start=83.6s stop=84.6s speaker=['SPEAKER_00'] text=  It's my sister.
+
+start=85.1s stop=85.9s speaker=['SPEAKER_00'] text=  want to know
+
+start=86.1s stop=87.1s speaker=['SPEAKER_00'] text=  We're in a black truck.
