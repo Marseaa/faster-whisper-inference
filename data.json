@@ -1,0 +1,228 @@
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 0.0,
+  "end time (s)": 2.0,
+  "text": "  What is the address of your emergency?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 2.5,
+  "end time (s)": 3.5,
+  "text": "  I'm not sure."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 3.9,
+  "end time (s)": 5.0,
+  "text": "  What's going on?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 5.2,
+  "end time (s)": 6.5,
+  "text": "  I'm not sure."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 6.7,
+  "end time (s)": 10.8,
+  "text": "  Why are you calling 911?  Pardon me?  Why are you calling 911?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 11.0,
+  "end time (s)": 12.5,
+  "text": "  What's the emergency?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 12.8,
+  "end time (s)": 16.4,
+  "text": "  Okay, never mind.  Ma'am?  Yes?  What's the emergency?"
+}
+{
+  "speaker": "SPEAKER_01",
+  "start time (s)": 13.5,
+  "end time (s)": 13.8,
+  "text": "  for my"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 16.5,
+  "end time (s)": 16.9,
+  "text": "  I..."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 17.1,
+  "end time (s)": 19.3,
+  "text": "  I mean, I can't really, I don't know."
+}
+{
+  "speaker": "SPEAKER_01",
+  "start time (s)": 17.3,
+  "end time (s)": 17.7,
+  "text": "  Camila."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 19.5,
+  "end time (s)": 23.6,
+  "text": "  You don't know why you called 9-1-1?  Yes, I do.  Okay, then why did you call?"
+}
+{
+  "speaker": "SPEAKER_01",
+  "start time (s)": 19.6,
+  "end time (s)": 20.1,
+  "text": "  you don't"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 23.9,
+  "end time (s)": 27.8,
+  "text": "  Okay, do I have to stay right now?  Yes.  Okay, then never mind."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 28.0,
+  "end time (s)": 29.1,
+  "text": "  Are you in a vehicle?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 29.5,
+  "end time (s)": 29.8,
+  "text": "  Yes."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 30.1,
+  "end time (s)": 32.7,
+  "text": "  Are you able to talk or is there someone?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 33.0,
+  "end time (s)": 34.9,
+  "text": "  Are you traveling?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 35.4,
+  "end time (s)": 35.7,
+  "text": "  Yes."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 36.2,
+  "end time (s)": 37.8,
+  "text": "  Are you going north or south?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 38.9,
+  "end time (s)": 40.5,
+  "text": "  Are we going north or south?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 41.4,
+  "end time (s)": 52.3,
+  "text": "  What have you found?  Okay, are you in danger?  Yes.  Okay, has someone kidnapped you?  No."
+}
+{
+  "speaker": "SPEAKER_01",
+  "start time (s)": 44.2,
+  "end time (s)": 44.3,
+  "text": "  Oh,"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 52.7,
+  "end time (s)": 55.4,
+  "text": "  I don't know.  Are you with a family member?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 55.6,
+  "end time (s)": 58.9,
+  "text": "  No.  Okay.  Are you with someone that you know?  Yes."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 59.9,
+  "end time (s)": 63.2,
+  "text": "  Does this person know you've called 9-1-1?  No.  Okay.  Okay."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 64.3,
+  "end time (s)": 68.8,
+  "text": "  Okay, then just pretend like you're talking to your friend and I'll see if I can't get somebody to help you."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 69.2,
+  "end time (s)": 71.3,
+  "text": "  And you're going southbound, right?  Yes."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 71.4,
+  "end time (s)": 72.1,
+  "text": "  Okay."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 72.4,
+  "end time (s)": 75.0,
+  "text": "  Are you in a vehicle, are you in a truck or a car?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 75.2,
+  "end time (s)": 76.1,
+  "text": "  Are you in a truck?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 76.4,
+  "end time (s)": 76.7,
+  "text": "  Yes."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 77.0,
+  "end time (s)": 77.4,
+  "text": "  Okay.  Okay."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 77.8,
+  "end time (s)": 80.7,
+  "text": "  I'm going to ask you what color, is it white?"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 81.1,
+  "end time (s)": 83.4,
+  "text": "  What color truck are we in?  Black."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 83.6,
+  "end time (s)": 84.6,
+  "text": "  It's my sister."
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 85.1,
+  "end time (s)": 85.9,
+  "text": "  want to know"
+}
+{
+  "speaker": "SPEAKER_00",
+  "start time (s)": 86.1,
+  "end time (s)": 87.1,
+  "text": "  We're in a black truck."
+}
