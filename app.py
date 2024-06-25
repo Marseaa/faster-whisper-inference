@@ -40,18 +40,22 @@ print("\n\n------------ Faster Whisper Raw Transcription --------------\n\n")
 
 # faster whisper transcription
 model_size = "large-v3"
+#model_size = "distil-large-v3" #melhorado
 
 # run on GPU with FP16
 model = WhisperModel(model_size, device="cuda", compute_type="float16")
 
-segments, info = model.transcribe(audio_file, beam_size=5)
+segments, info = model.transcribe(audio_file, beam_size=5, language = "pt")
 
-print("Detected language '%s' with probability %f" % (info.language, info.language_probability))
+#print("Detected language '%s' with probability %f" % (info.language, info.language_probability))
 print("\n")
 
 # imprime transcriçao bruta
-for segment in segments:
-    print("[%.2fs -> %.2fs] %s" % (segment.start, segment.end, segment.text))
+with open("raw_transcription.txt", "w") as RTfile:
+    for segment in segments:
+        print("[%.2fs -> %.2fs] %s" % (segment.start, segment.end, segment.text))
+        RTfile.write(f"start={segment.start} stop={segment.end} text={segment.text}\n")
+
 
 print("\n")
 
@@ -72,7 +76,7 @@ def seconds_to_ms(seconds):
 print("\n\n------------ Final Transcription --------------\n\n")
 
 with open("diarization.txt", "r") as diarization_file:
-    with open("transcriptions.txt", "w") as transcription_file:
+    with open("final_transcription.txt", "w") as transcription_file:
         with open('data.json', 'w') as json_file:
             for line in diarization_file:
                 # encontra tempos definidos na diarizaçao e narrador identificado naquele tempo
@@ -88,11 +92,11 @@ with open("diarization.txt", "r") as diarization_file:
                 audio_part = audio[seconds_to_ms(start_time):seconds_to_ms(end_time)]
 
                 audio_bytes = io.BytesIO() # primeiro cria um objeto BytesIO para armazenar os dados de áudio exportados
-                audio_part.export(audio_bytes, format="mp3") # depois exporta o segmento para objeto e define o formato do arquivo
+                audio_part.export(audio_bytes, format="wav") # depois exporta o segmento para objeto e define o formato do arquivo
                 audio_bytes.seek(0) # move o ponteiro para o inicio do audio
 
                 # transcreve o segmento de audio
-                segments, info = model.transcribe(audio_bytes, beam_size=5)
+                segments, info = model.transcribe(audio_bytes, beam_size=5, language="pt")
 
                 text = ""
 
@@ -115,7 +119,7 @@ with open("diarization.txt", "r") as diarization_file:
                 json_file.write("\n") # pula linha
 
 # imprime transcriçao final
-with open("transcriptions.txt", "r") as file:
+with open("final_transcription.txt", "r") as file:
     for l in file:
         print(l)
 
